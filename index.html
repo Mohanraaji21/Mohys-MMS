@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass Mail Sender</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>
+    <span class="txt-rotate" data-period="2000"
+      data-rotate='[ "Hi !! friends", "Want to send Multiple Emails", "In One - click", "Then Welcome..", "Just upload a CSV file", "Write message", "And Send Emails", "ENJOY !!!" ]'></span>
+  </h1>
+  <p id="heading">Mohy's <br> Mass Mail<br> Dispatcher</p>
+
+  <form method="post">
+    <label for="senderEmail">From :</label>
+    <input type="email" id="senderEmail" name="senderEmail" required>
+
+    <label for="subject">Subject:</label>
+    <textarea id="subject" name="subject" required></textarea>
+
+    <label for="csvFile">CSV File:</label>
+    <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="button" value="Send Emails" onclick="sendEmails()">
+
+    <div style="display:flex; margin-top: 1em;">
+      <div>
+        <p>Valid Emails: <span id="validEmailCount"></span></p>
+        <div id="validEmails"></div>
+      </div>
+      <div style="margin-left: 15px">
+        <p>Invalid Emails: <span id="invalidEmailCount"></span></p>
+        <div id="invalidEmails"></div>
+      </div>
+    </div>
+  </form>
+
+  <!-- <img src="Images/boy.png" alt="" class="img1">
+  <img src="Images/cloud.png" alt="" class="img2"> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

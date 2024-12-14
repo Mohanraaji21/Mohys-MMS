@@ -1,0 +1,82 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #e6e6e6; */
+  background: linear-gradient(rgb(91, 213, 243), rgb(187, 0, 187));
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  margin-top: 2em;
+  color: #575761;
+  font-family: 'Raleway', sans-serif;
+}
+
+#heading {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+/* Form styling */
+form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #575761;
+}
+
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  /* padding-right: 20px; */
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  margin-bottom: 12px;
+
+}
+
+input[type="button"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the rotating text */
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
